@@ -1,6 +1,14 @@
 @import url(https://fonts.google.com/specimen/Montserrat);
 @import url(https://fonts.google.com/specimen/Fraunces);
 
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +16,7 @@
 }
 
 body {
-  background-color: hsl(30, 38%, 92%);
+  background-color: var(--cream);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +35,7 @@ body {
 }
 
 .card_container {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--white);
   border-radius: 10px;
   display: flex;
   margin: 0 1rem;
@@ -56,12 +64,12 @@ body {
   font-family: "Montserrat";
   letter-spacing: 3px;
   font-size: 14px;
-  color: hsl(228, 12%, 48%);
+  color: var(--dark-grayish-blue);
   margin-bottom: 1.75rem;
 }
 
 .details_container .name {
-  color: hsl(212, 21%, 14%);
+  color: var(--very-dark-blue);
   padding-right: 2rem;
   margin-bottom: 1.75rem;
   /* font-weight: bold; */
@@ -70,7 +78,7 @@ body {
 .details_container .description {
   font-family: "Montserrat";
   font-size: 14px;
-  color: hsl(228, 12%, 48%);
+  color: var(--dark-grayish-blue);
   margin-bottom: 1.75rem;
   line-height: 22px;
 }
@@ -84,20 +92,20 @@ body {
 }
 
 .price_container .new_price {
-  color: hsl(158, 36%, 37%);
+  color: var(--dark-cyan);
   font-family: "Fraunces";
   font-size: 30px;
   font-weight: bold;
 }
 
 .price_container .old_price {
-  color: hsl(228, 12%, 48%);
+  color: var(--dark-grayish-blue);
   text-decoration: line-through;
   font-family: "Montserrat";
 }
 
 .details_container .btn {
-  background-color: hsl(158, 36%, 37%);
+  background-color: var(--dark-cyan);
   width: 100%;
   color: white;
   border: 0;
@@ -116,7 +124,7 @@ body {
 }
 
 .details_container .btn:hover {
-  background-color: hsl(212, 21%, 14%);
+  background-color: var(--very-dark-blue);
 }
 
 @media only screen and (max-width: 768px) {
